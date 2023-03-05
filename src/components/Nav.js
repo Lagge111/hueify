@@ -1,3 +1,5 @@
+import { Github } from "./Icons";
+
 const Nav = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -6,20 +8,24 @@ const Nav = () => {
   };
 
   return (
-    <div className="fixed w-full z-50 mx-auto pt-4 top-0 backdrop-blur-sm bg-primary/30">
+    <div className="fixed w-full z-50 mx-auto py-4 top-0 backdrop-blur-sm bg-primary/30">
       <div className="max-w-3xl mx-auto px-4 md:px-6 flex justify-between items-center sm:py-2 text-white font-mona font-semibold">
-        <div onClick={scrollToTop} className="sm:flex hidden">
-          Hueify
+        <div
+          onClick={scrollToTop}
+          className="sm:flex hidden cursor-pointer text-xl"
+        >
+          <span className="bg-gradient-to-r from-[#93f5ec] to-[#a77bf3] text-transparent bg-clip-text text-center font-extrabold text-xl">
+            HUE
+          </span>
+          ify
         </div>
-        <div className="sm:flex hidden">Link</div>
-        <div className="sm:flex hidden">Link</div>
         <a
-          href="/"
+          href="/https://github.com/Lagge111/hueify"
           target="_blank"
           rel="noreferrer"
-          className="font-mona border rounded border-secondary text-secondary px-4 py-2 text-sm hover:bg-white/20 ease-in-out duration-300 no-underline sm:flex hidden"
+          className="sm:flex hidden"
         >
-          GitHub
+          <Github />
         </a>
       </div>
     </div>

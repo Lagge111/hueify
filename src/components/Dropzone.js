@@ -2,10 +2,12 @@ import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 
 const Dropzone = ({ imageData, setImageData }) => {
-  const onDrop = useCallback((acceptedFiles) => {
-    console.log(acceptedFiles);
-    setImageData(URL.createObjectURL(acceptedFiles[0]));
-  }, []);
+  const onDrop = useCallback(
+    (acceptedFiles) => {
+      setImageData(URL.createObjectURL(acceptedFiles[0]));
+    },
+    [setImageData]
+  );
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
@@ -14,7 +16,7 @@ const Dropzone = ({ imageData, setImageData }) => {
       <div
         className={`rounded-xl bg-gradient-to-br from-[#93f5ec] to-[#a77bf3] w-full group p-[1px] ${
           isDragActive
-            ? "p-[3px] transition-all duration-75"
+            ? "p-[1px] transition-all duration-75 shadow-2xl shadow-white/10 border-dashed border-2 border-white/70"
             : "p-[1px] transition-all duration-75"
         }`}
       >
