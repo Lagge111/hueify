@@ -38,10 +38,10 @@ const ColorIdentifier = () => {
         <div className="collapse collapse-arrow bg-dark_gray rounded-xl pt-6">
           <input className="peer w-full" type="checkbox" />
           <div className="collapse-title bg-dark_gray text-primary-content peer-checked:bg-dark_gray peer-checked:text-secondary-content">
-            <h3 className="text-white sm:text-4xl xs:text-3xl text-3xl font-extrabold font-mona mb-2">
+            <h3 className="text-white sm:text-4xl xs:text-3xl text-3xl font-extrabold font-mona mb-4">
               Color Identifier
             </h3>
-            <p className="text-white/80 font-mona mb-8">
+            <p className="text-white/50 font-mona mb-6">
               Want to know the name of a color? Look no further!
             </p>
           </div>
@@ -52,12 +52,12 @@ const ColorIdentifier = () => {
               <HexColorInput color={color} onChange={handleColorChange} />
               <div className="text-white font-mona text-xl">
                 {colorName && (
-                  <div className="flex flex-col mt-6 justify-center items-center text-center gap-4">
+                  <div className="flex flex-col mt-6 mb-4 justify-center items-center text-center gap-4">
                     <div
                       style={{ backgroundColor: `${color}` }}
                       className="w-20 h-20 rounded-lg"
                     ></div>
-                    <p className="text-white/80">{colorName}</p>
+                    <p className="text-white/80 font-mona">{colorName}</p>
                   </div>
                 )}
               </div>

@@ -27,12 +27,12 @@ const Dropzone = ({ setImageData }) => {
           <input {...getInputProps()} />
           {isDragActive ? (
             <>
-              <p className="text-3xl font-bold mb-4">Almost there!</p>
+              <p className="text-4xl font-extrabold mb-4">Almost there!</p>
               <p className="text-white/50">Drop the image here...</p>
             </>
           ) : (
             <>
-              <p className="text-3xl font-bold mb-4">Try it out!</p>
+              <p className="text-4xl font-extrabold mb-4">Try it out!</p>
               <p className="text-white/50 mx-4">
                 Drag and drop your image here, or click to select an image
               </p>

@@ -32,6 +32,7 @@
 
 .identifier-container .react-colorful {
     min-width: 100%;
+    padding-inline: 6px;
 }
 
 input {
