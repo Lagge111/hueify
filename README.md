@@ -1,5 +1,7 @@
 # HUEify
 
+![HUEify cover photo](./public/static/hueify-cover.png)
+
 #### A simple tool for extracting colors from images and finding color names.
 
 Built with React, Tailwind CSS and daisyUI.
