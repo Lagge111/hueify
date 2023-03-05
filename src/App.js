@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Nav from "./components/Nav";
+import Dropzone from "./components/Dropzone";
+import Hero from "./components/Hero";
+import ResultsCard from "./components/ResultsCard";
 
 function App() {
+  const [imageData, setImageData] = useState(null);
+
+  const handleDataChange = () => {
+    setImageData(null);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col items-center bg-gradient-to-b from-[#2C2443] via-primary to-primary h-full cursor-default">
+      <Nav />
+      <Hero />
+      {imageData ? (
+        <ResultsCard
+          imageData={imageData}
+          setImageData={setImageData}
+          handleDataChange={handleDataChange}
+        />
+      ) : (
+        <Dropzone imageData={imageData} setImageData={setImageData} />
+      )}
     </div>
   );
 }
-
 export default App;
