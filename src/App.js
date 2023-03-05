@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import ResultsCard from "./components/ResultsCard";
 import Footer from "./components/Footer";
 import Instructions from "./components/Instructions";
+import ColorIdentifier from "./components/ColorIdentifier";
 
 function App() {
   const [imageData, setImageData] = useState(null);
@@ -25,6 +26,7 @@ function App() {
       ) : (
         <Dropzone setImageData={setImageData} />
       )}
+      <ColorIdentifier />
       <Instructions />
       <Footer />
     </div>

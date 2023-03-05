@@ -13,6 +13,8 @@
     src: url("../public/fonts/Mona-Sans.woff2");
 }
 
+/* Scrollbar */
+
 ::-webkit-scrollbar {
     width: 0.4em;
 }
@@ -24,4 +26,24 @@
 ::-webkit-scrollbar-thumb {
     background: #5a6075;
     border-radius: 100vw;
+}
+
+/* Color Picker */
+
+.identifier-container .react-colorful {
+    min-width: 100%;
+}
+
+input {
+    width: 90px;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+    border: 2px;
+    border-color: white;
+    padding-inline: 0px;
+    padding-block: 6px;
+    margin-top: 18px;
+    background-color: #464d5779;
+    letter-spacing: 0.1em;
 }

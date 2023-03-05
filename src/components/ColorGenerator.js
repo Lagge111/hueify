@@ -40,7 +40,7 @@ const ColorGenerator = ({ imageData }) => {
                             ></div>
                             <p
                               onClick={() =>
-                                navigator.clipboard.writeText(color)
+                                navigator.clipboard.writeText(color.slice(1))
                               }
                               className={`text-white font-light mt-4 tracking-widest hover:opacity-80 cursor-pointer`}
                             >

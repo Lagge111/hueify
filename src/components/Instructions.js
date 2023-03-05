@@ -9,11 +9,15 @@ const Instructions = () => {
           currently underpaid, but hey, it's a startup. What did you expect,
           tiny backend wizard?
         </p>
-        <p className="text-white/80 leading-7 mt-2">
+        <p className="text-white/80 leading-7 mt-3">
           Jokes aside, the color extraction works by parsing the pixels of the
           uploaded image, constructing an array of the pixels' RGB values, and
-          applying color quantization to get the HEX values. And don't worry,
-          your images are never stored or kept.
+          applying color quantization to reduce the number of unique colors in
+          the image. The colors are then converted from their RGB values to
+          their equivalent HEX values. Et voilà!
+        </p>
+        <p className="text-white/80 leading-7 mt-3">
+          And don't worry, your images are never stored or kept.
         </p>
       </div>
     </div>

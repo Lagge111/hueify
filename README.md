@@ -1,10 +1,15 @@
 # HUEify
 
-A simple tool for extracting colors from images.
+A simple tool for extracting colors from images and finding color names.
 
 Built with React, Tailwind CSS and daisyUI.
 
-Uses `react-dropzone` for image uploads and `color-thief-react` for color extraction.
+### Other Libraries Used
+
+- `react-dropzone` - Image uploads
+- `color-thief-react` - Color extraction
+- `react-colorful` - Color picker
+- `The Color API` - Color name generation
 
 ## Run the Project Locally
 

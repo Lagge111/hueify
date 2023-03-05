@@ -17,7 +17,7 @@ const Nav = () => {
           ify
         </div>
         <a
-          href="/https://github.com/Lagge111/hueify"
+          href="https://github.com/Lagge111/hueify"
           target="_blank"
           rel="noreferrer"
           className="flex"
