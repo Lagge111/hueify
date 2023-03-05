@@ -22,7 +22,7 @@ const Dropzone = ({ imageData, setImageData }) => {
       >
         <div
           {...getRootProps()}
-          className={`rounded-xl flex flex-col justify-center w-full min-w-[550px] max-h-[500px] min-h-[250px] bg-dark_gray font-mona text-white cursor-pointer text-center`}
+          className={`rounded-xl flex flex-col justify-center w-full md:min-w-[550px] max-h-[500px] min-h-[250px] bg-dark_gray font-mona text-white cursor-pointer text-center`}
         >
           <input {...getInputProps()} />
           {isDragActive ? (
@@ -33,7 +33,7 @@ const Dropzone = ({ imageData, setImageData }) => {
           ) : (
             <>
               <p className="text-3xl font-bold mb-4">Try it out!</p>
-              <p className="text-white/50">
+              <p className="text-white/50 mx-4">
                 Drag and drop your image here, or click to select an image
               </p>
             </>

@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center bg-gradient-to-b from-[#2C2443] via-primary to-primary min-h-screen cursor-default">
+    <div className="flex flex-col items-center bg-gradient-to-b from-[#2C2443] via-primary to-primary min-h-screen cursor-default px-4">
       <Nav />
       <Hero />
       {imageData ? (
