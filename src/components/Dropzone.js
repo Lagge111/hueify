@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 
-const Dropzone = ({ imageData, setImageData }) => {
+const Dropzone = ({ setImageData }) => {
   const onDrop = useCallback(
     (acceptedFiles) => {
       setImageData(URL.createObjectURL(acceptedFiles[0]));

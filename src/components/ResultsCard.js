@@ -1,6 +1,6 @@
 import ColorGenerator from "./ColorGenerator";
 
-const ResultsCard = ({ imageData, setImageData, handleDataChange }) => {
+const ResultsCard = ({ imageData, handleDataChange }) => {
   return (
     <div className="flex flex-col justify-center items-center bg-[#24292F] py-12 px-10 rounded-xl max-w-[750px] md:min-w-[750px]">
       <img

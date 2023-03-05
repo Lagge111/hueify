@@ -20,11 +20,10 @@ function App() {
       {imageData ? (
         <ResultsCard
           imageData={imageData}
-          setImageData={setImageData}
           handleDataChange={handleDataChange}
         />
       ) : (
-        <Dropzone imageData={imageData} setImageData={setImageData} />
+        <Dropzone setImageData={setImageData} />
       )}
       <Instructions />
       <Footer />
