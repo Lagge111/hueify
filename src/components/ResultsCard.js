@@ -2,7 +2,7 @@ import ColorGenerator from "./ColorGenerator";
 
 const ResultsCard = ({ imageData, handleDataChange }) => {
   return (
-    <div className="flex flex-col justify-center items-center bg-[#24292F] py-12 px-10 rounded-xl max-w-[750px] md:min-w-[750px]">
+    <div className="flex flex-col justify-center items-center bg-[#24292F] py-12 px-10 rounded-xl max-w-[750px] md:min-w-[750px] min-w-[300px]">
       <img
         src={imageData}
         alt="img"
@@ -11,7 +11,7 @@ const ResultsCard = ({ imageData, handleDataChange }) => {
       <div className="flex justify-center items-center mt-10">
         <button
           onClick={handleDataChange}
-          className="font-mona border rounded border-white text-white px-4 py-3 text-sm font-semibold hover:bg-white/20 ease-in-out duration-300 no-underline sm:flex hidden tracking-wide"
+          className="font-mona border rounded border-white/80 text-white/80 px-4 py-3 text-sm font-semibold hover:bg-white/20 ease-in-out duration-300 no-underline tracking-wide"
         >
           Start over
         </button>

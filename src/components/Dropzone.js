@@ -12,7 +12,7 @@ const Dropzone = ({ setImageData }) => {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
   return (
-    <div className="mx-auto flex items-center justify-center]">
+    <div className="mx-auto flex items-center justify-center max-w-[552px] w-full">
       <div
         className={`rounded-xl bg-gradient-to-br from-[#93f5ec] to-[#a77bf3] w-full group p-[1px] ${
           isDragActive

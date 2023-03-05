@@ -24,7 +24,7 @@ const ColorGenerator = ({ imageData }) => {
                   {loading ? (
                     <Loader />
                   ) : (
-                    <ul className="flex gap-8 font-mona justify-center items-center">
+                    <ul className="md:flex grid grid-cols-3 gap-8 font-mona justify-center items-center content-center">
                       {data
                         ?.filter(
                           (item, index, array) => array.indexOf(item) === index
@@ -58,7 +58,7 @@ const ColorGenerator = ({ imageData }) => {
             <Color src={imageData} crossOrigin="anonymous" format="hex">
               {({ data, loading }) => {
                 return (
-                  <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center text-center">
                     <div className="text-white/70 font-mona mb-4 text-2xl">
                       Most predominant color
                     </div>
