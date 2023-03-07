@@ -6,17 +6,13 @@ const ColorIdentifier = () => {
   const [colorName, setColorName] = useState(null);
   let timeoutId = null;
 
-  const getColorName = useCallback(
-    async (newColor) => {
-      let response = await fetch(
-        `https://www.thecolorapi.com/id?hex=${newColor.slice(1)}`
-      );
-      let result = await response.json();
-      setColorName(result.name.value);
-      console.log(colorName);
-    },
-    [colorName]
-  );
+  const getColorName = useCallback(async (newColor) => {
+    let response = await fetch(
+      `https://www.thecolorapi.com/id?hex=${newColor.slice(1)}`
+    );
+    let result = await response.json();
+    setColorName(result.name.value);
+  }, []);
 
   const handleColorChange = (newColor) => {
     setColor(newColor);
